@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Cru</h1>
+        <div class="content">
+            <form id="add-contact-form">
+                <input type="text" name="name" placeholder="Enter name">
+                <button>Add Contact</button>
+            </form>
+            <ul id="contact-list"></ul>
+        </div>
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDIY8ENum04dOSOdcbiqa7RqsL9uaIBpsQ",
+            authDomain: "cru-app.firebaseapp.com",
+            databaseURL: "https://cru-app.firebaseio.com",
+            projectId: "cru-app",
+            storageBucket: "cru-app.appspot.com",
+            messagingSenderId: "97903323246",
+            appId: "1:97903323246:web:d8e84768d7f05bf7d95e7f",
+            measurementId: "G-P9RCY56QGZ"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
